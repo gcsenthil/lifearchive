@@ -44,7 +44,7 @@
           <a href="#screenshots">Product</a>
           <a href="#benefits">Benefits</a>
           <a href="#faq">FAQ</a>
-          <a class="btn btn-sm btn-primary" href="https://tally.so/r/aQo7o2">Join Waitlist</a>
+          <a class="btn btn-sm btn-primary" href="#waitlist-form">Join Waitlist</a>
         </nav>
       </div>
     </header>
@@ -62,7 +62,7 @@
               Transform thousands of forgotten photos into a living timeline of your life with AI.
             </p>
             <div class="hero-cta">
-              <a class="btn btn-primary" href="https://tally.so/r/aQo7o2">Join Early Access</a>
+              <a class="btn btn-primary" href="#waitlist-form">Join Early Access</a>
               <a class="btn btn-secondary" href="#screenshots">See Example</a>
             </div>
             <p class="hero-proof">Works with Google Photos, iCloud, and OneDrive exports.</p>
@@ -268,17 +268,25 @@
             <p>
               Join the waitlist to shape LifeArchive and get priority access when we launch.
             </p>
+            <div class="waitlist-points" aria-label="Waitlist Benefits">
+              <span>No credit card required</span>
+              <span>2-minute signup</span>
+              <span>Priority onboarding</span>
+            </div>
           </div>
 
-          <form
-            class="waitlist-form"
-            action="https://tally.so/r/aQo7o2"
-            method="GET"
-            target="_blank"
-          >
-            <button class="btn btn-primary btn-block" type="submit">Join Waitlist</button>
-            <p class="form-note">You will complete the quick signup on our secure Tally form.</p>
-          </form>
+          <div class="waitlist-form waitlist-embed" id="waitlist-form">
+            <iframe
+              class="tally-iframe"
+              data-tally-src="https://tally.so/embed/aQo7o2?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+              src="https://tally.so/embed/aQo7o2?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+              title="LifeArchive Waitlist Form"
+              loading="lazy"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+            ></iframe>
+          </div>
         </div>
       </section>
 
@@ -354,5 +362,7 @@
         <div class="lightbox-body"></div>
       </div>
     </div>
+
+    <script async src="https://tally.so/widgets/embed.js"></script>
   </body>
 </html>
