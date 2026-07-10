@@ -6,7 +6,6 @@
   var yearEl = document.getElementById('year');
   var revealEls = document.querySelectorAll('.reveal');
   var faqButtons = document.querySelectorAll('.faq-question');
-  var waitlistForm = document.querySelector('.waitlist-form');
   var heroImage = document.querySelector('.hero-visual img');
   var screenCards = document.querySelectorAll('.screen-card');
   var lightbox = document.getElementById('imageLightbox');
@@ -121,16 +120,6 @@
       }
     });
   });
-
-  if (waitlistForm) {
-    waitlistForm.addEventListener('submit', function () {
-      var submitButton = waitlistForm.querySelector('button[type="submit"]');
-      if (submitButton) {
-        submitButton.disabled = true;
-        submitButton.textContent = 'Submitting...';
-      }
-    });
-  }
 
   function openLightboxImage(src, alt) {
     if (!lightbox || !lightboxBody) {
